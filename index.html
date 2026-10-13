@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover quality products at our modern online store.">
+    <title>Luna Mart | Shop Smart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home">Luna<span>Store</span></a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a class="cart-link" href="#cart">
+            Cart <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">THE EVERYDAY COLLECTION</p>
+                <h1>Find your next<br>favorite thing.</h1>
+                <p>Thoughtfully selected essentials for your everyday life.</p>
+                <a class="primary-button" href="#products">Explore products</a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <span>✦</span>
+                <div class="hero-circle">N</div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">CURATED FOR YOU</p>
+                    <h2>Our products</h2>
+                </div>
+                <p id="product-total">6 products</p>
+            </div>
+
+            <div class="toolbar">
+                <label class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="search-input" type="search"
+                        placeholder="Search products..."
+                        aria-label="Search products">
+                </label>
+
+                <label>
+                    <span class="visually-hidden">Filter by category</span>
+                    <select id="category-filter">
+                        <option value="all">All categories</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Tech">Tech</option>
+                        <option value="Home">Home</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="visually-hidden">Sort products</span>
+                    <select id="sort-filter">
+                        <option value="default">Featured</option>
+                        <option value="low">Price: Low to high</option>
+                        <option value="high">Price: High to low</option>
+                    </select>
+                </label>
+            </div>
+
+            <p id="status" role="status" aria-live="polite"></p>
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR SELECTION</p>
+                    <h2>Your shopping cart</h2>
+                </div>
+                <button id="clear-cart" class="secondary-button" type="button">
+                    Clear cart
+                </button>
+            </div>
+
+            <div id="cart-items">
+                <p>Your cart is empty. Explore our products above!</p>
+            </div>
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">$0.00</strong>
+            </div>
+            <p class="cart-note">Demo project only. No real payments are processed.</p>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>Simple choices. Everyday quality.</h2>
+            <p>NovaStore is a demo storefront built with HTML, CSS and JavaScript.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="#home">Nova<span>Store</span></a>
+        <p>Designed for everyday living.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
